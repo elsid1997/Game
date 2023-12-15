@@ -17,3 +17,11 @@ git reset --soft HEAD~1 - удаляет комит но оставляет ег
 git remote remove project_name - удаляет удаленный репозиторий
 rm -rf .git - удаляет скрытую папку git с методанныйми
 git -rf [путь к директории] - удаляет локальную директорию с вашим гит репозиторием
+git branche -vv и switch-branch - выводят дополнительную инфрормацию о ветках
+git flow init - создается GitFlow в существующем репозитории
+git flow feature start featureName - создается ветка от develope для разработки новой функции
+git flow feature finish featureName - происходит слияние с develop и удаление featureName
+git flow release start releaseName - ветка от develope перед добавлением в master (для тестирования и исправления)
+git flow release finish releaseName - слияние с master и удаление ветки releaseName
+git flow hotfix start hotfixName - ветка от master для исправления ошибок 
+git flow hotfix finish  hotfixName - слияние с master и develope после исправление,также автоматически удаляется
